@@ -451,15 +451,26 @@ li{
     background-color: black;
     padding: 1rem;
 }
+/*rden de iconos y cambio de color tipografia*/ 
 
 .footer-by{
-    color: white;
+    color: rgb(87, 78, 67);
     font-family: "Indie Flower", cursive;
     margin: 0;
     text-align: center;
 }
+.icon {
+    list-style: none; 
+    list-style-type: none; 
+    list-style-position: inline; 
+    height: 30px;
+    text-align:center;
+    margin-block-end: 4%;
+}
+    
 
 .logo__nombre{
+    color:rgb(131, 85, 29);
     text-align: center;
 }
 
