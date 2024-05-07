@@ -12,15 +12,14 @@ l<!DOCTYPE html>
     <link rel="shortcup icon" href="img/coffee-breaks.png">
     <title>Contacto - MundoCafé</title>
 </head>
-<body>
 
+<body>
     <div class="principal-nav">
         <div class="logo">
             <a href="/"><h1 class="titulo">Mundo<span class="negrita">Café</span> </h1></a>
         </div>
-
-        <input type="checkbox" id="toggle">
-        <label for="toggle"><img class="menu" src="img/menu.svg" alt=""></label>
+    <input type="checkbox" id="toggle">
+    <label for="toggle"><img class="menu" src="img/menu.svg" alt=""></label>
 
         <nav class="navigation">
             <ul>
@@ -37,34 +36,59 @@ l<!DOCTYPE html>
             </ul>
         </nav>
     </div>
-    <!--main-->   
-     	<section class="contacto">
-			<span class="icon solid fa-envelope"></span>
-				<h2>Contactanos</h2>
-				<p>Somos expertos!!</p>
-				<div class="formulario">
-					<form>
-                        <div class= "nombre">                            
-		    			    <input type="text" name="name" placeholder="Name" />
-						</div>
-                         <div>
-							<input type="text" name="email" placeholder="Email" />
-						</div>
-						<div class="asunto">
-							<input type="text" name="subject" placeholder="Subject" />
-						</div>
-						<div class="mensaje">
-						    <textarea name="message" placeholder="Message" rows="7"></textarea>
-						</div>
-						<div class="botones">
-							<ul class="buttons">
-							    <li><input type="submit" class="special" value="Send Message" /></li>
-							</ul>
-						</div>
-					</div>
-		    		</form>
-				</div>
-        </section>
+    
+<!--main-->   
+        
+    <section class="contacto">
+        <span class="icon solid fa-envelope"></span>
+        <h2>Contactanos</h2>
+        <p>Somos expertos!!</p>
+        <div class="formulario">
+            <form>
+                <div class="nombre">                            
+                    <label for="name">Nombre:</label><br>
+                    <input type="text" id="name" name="name" placeholder="Nombre Apellido" required><br>
+                </div>
+                <div class="email">        
+                    <label for="email">Correo electrónico:</label><br>
+                    <input type="email" id="email" name="email" placeholder="example@email.com" required><br>
+                </div>    
+                <div class="queryType">
+                    <label for="queryType">Tipo de consulta:</label><br>
+                    <select id="queryType" name="queryType" required>
+                        <option value="">--Por favor seleccione--</option>
+                        <option value="general">Pregunta general</option>
+                        <option value="recipe">Sugerencia de receta de café</option>
+                        <option value="seeds">Consulta sobre semillas de café</option>
+                    </select>
+                    <br>
+                </div>
+
+                <div class="asunto">
+                    <label for="subject">Asunto:</label><br>
+                    <input type="text" id="subject" name="Asunto" placeholder="Asunto" required><br>
+                </div>
+                <div class="mensaje">
+                    <label for="message">Mensaje:</label><br>
+                    <textarea id="message" name="message" placeholder="mensaje" rows="7" required></textarea><br>
+                </div>
+
+                <div class="newsletter">
+                    <input type="checkbox" id="newsletter" name="newsletter">
+                    <label for="newsletter">¿Desea recibir nuestro boletín informativo?</label><br>
+                </div>
+                
+                <div class="botones">
+                    <ul class="buttons">
+                        <li><input type="submit" class="special" value="Enviar" /></li>
+                    </ul>
+                </div>  
+            </form>
+        </div>
+    </section>
+
+         
+
     
     <footer class="footer">
         <div class="contenedor">
@@ -88,6 +112,5 @@ l<!DOCTYPE html>
              </div>
         </div>
     </footer>
-    
 </body>
 </html>

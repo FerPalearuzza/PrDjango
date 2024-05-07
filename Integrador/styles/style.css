@@ -448,7 +448,7 @@ li{
 
 /* //FOOTER */
 .footer{
-    background-color: black;
+    background-color: bisque; /* lo puse para probar xq no se veían los íconos. si está feo se cambia.*/
     padding: 1rem;
 }
 /*rden de iconos y cambio de color tipografia*/ 
