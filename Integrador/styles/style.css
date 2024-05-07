@@ -19,8 +19,38 @@ body {
     line-height: 2;
     min-height: 100vh;
     box-sizing: border-box;   
-
 }
+/*efecto esmerilado index*/
+.subtitulo{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-image: url('../img/cafe.jpg');
+    background-repeat: no-repeat;
+    background-position:  center;
+    background-attachment: relative;
+    background-size: cover;
+    display: grid;
+    align-items: center;
+   
+}
+.presentacion {
+    width: 20em ;
+    height: 14em;
+    border: 4px solid rgba(250, 249, 249, 0.1);
+    margin: auto; 
+    backdrop-filter: blur(4px);
+    text-align: center;
+}
+.presentacion .efectoglass{
+    position: center;
+    background: #e7e0e02c;
+}
+.bajar {
+    color: white;
+    font-weight: 400;
+}
+/* termina efector esmerilado index*/
 
 .bg{
     background-image: url(../img/webp\ final.jpg);
