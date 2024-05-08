@@ -44,7 +44,7 @@
 <!--main-->   
         
     <main>
-        <section class="contacto">
+        <section class="contacto fuente">
             <div id="tituloFormulario">
                 <span class="icon solid fa-envelope">*ícono sobre*</span>
                 <!-- no se ve el ícono -->
@@ -61,7 +61,7 @@
                   
                 <label for="tipoConsulta">Tipo de consulta:</label><br>
                 <select class="full-ancho renglon" id="tipoConsulta" name="tipoConsulta" required>
-                    <option value="">--Por favor seleccione--</option>
+                    <option value=""> Seleccione una opción</option>
                     <option value="general">Pregunta general</option>
                     <option value="receta">Sugerencia de receta de café</option>
                     <option value="semillas">Consulta sobre semillas de café</option>
@@ -76,12 +76,13 @@
                 <textarea class="full-ancho borde-full" id="message" name="message" rows="7" placeholder="mensaje" required></textarea>
                 <br>
 
-
-                <input type="checkbox" id="newsletter" name="newsletter">
+                
+                <input class="inline" type="checkbox" id="newsletter" name="newsletter">
                 <label for="newsletter">¿Desea recibir nuestro boletín informativo?</label>
+                
                 <br>
                     
-                <input class="full-ancho borde-full" type="submit" class="special" value="Enviar"/>
+                <input class="full-ancho borde-full boton" type="submit" class="special" value="Enviar"/>
                 </form>
             </div>
         </section>    
