@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
 /* Esta propiedad cambia el modelo de caja predeterminado para que el ancho y alto de los elementos incluyan el padding y el borde,
  y no solo el contenido. Esto facilita el diseño de la página porque el tamaño final de los elementos es más predecible*/
 html {
@@ -76,20 +81,20 @@ a {
 
 img{
     max-width: 100%;
-    height: 35rem;
+    /* height: 35rem; */
+    height: 1em;
 }
 
-/*HEADER*/
+/*HEADER
 .header {
-    background-image: url(../img/thumb-1920-1340586.png);
-    height: 50rem;
-    background-position: center center;
+    background-repeat: no-repeat;
+    height: 12rem;
+    background-position: absolute;
     background-size: cover;
-    background-color: rgba(0, 0, 0, 0.3);
-    /* Ajusta la opacidad según tus preferencias */
+    background-color: rgba(140, 134, 116, 0.3);
+    /* Ajusta la opacidad según tus preferencias
     background-blend-mode: darken;
-}
-
+} */
 
 h1 {
     margin: 0;
@@ -178,11 +183,8 @@ p {
 }
 
 .navigation{
-    
-    
     ul{
         list-style: none;
-
     }
 }
 
@@ -448,8 +450,11 @@ li{
 
 /* //FOOTER */
 .footer{
-    background-color: bisque; /* lo puse para probar xq no se veían los íconos. si está feo se cambia.*/
-    padding: 1rem;
+    background-color: bisque; 
+    padding: 1rem; 
+    size: 1em;
+    margin: 0;
+    object-position: bottom bottom;
 }
 /*rden de iconos y cambio de color tipografia*/ 
 

@@ -1,0 +1,28 @@
+main.contacto{
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  
+  background-image: url('../img/cafe.jpg');
+  background-repeat: no-repeat;
+  background-position:  center;
+  background-attachment: relative;
+  background-size: cover;
+
+  padding-top: 110px;
+  /* esto debería tener un media query xq el menú cambia de grosor */
+}
+
+/* es un quilombo de containers, los bordes son solo auxiliares después los saco*/
+#tituloFormulario{
+  border: 2px solid white;
+  padding: 1em;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+
+}
+
+.formulario{
+  border: 2px solid white;
+}
