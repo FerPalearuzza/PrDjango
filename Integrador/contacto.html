@@ -43,56 +43,48 @@
 
 <!--main-->   
         
-    <main class="contacto">
-       
-        <div id="tituloFormulario">
-            <span class="icon solid fa-envelope">*ícono sobre*</span>
-            <!-- no se ve el ícono -->
-            <h2>Contactanos</h2>
-            <p>Somos expertos!!</p>
-        </div>
-        <div class="formulario">
+    <main>
+        <section class="contacto">
+            <div id="tituloFormulario">
+                <span class="icon solid fa-envelope">*ícono sobre*</span>
+                <!-- no se ve el ícono -->
+                <h2>Contactanos</h2>
+                <p>Somos expertos!!</p>
+            </div>
             <form>
-                <div class="nombre">                            
-                    <label for="name">Nombre:</label><br>
-                    <input type="text" id="name" name="name" placeholder="Nombre Apellido" required><br>
-                </div>
-                <div class="email">        
-                    <label for="email">Correo electrónico:</label><br>
-                    <input type="email" id="email" name="email" placeholder="example@email.com" required><br>
-                </div>    
-                <div class="queryType">
-                    <label for="queryType">Tipo de consulta:</label><br>
-                    <select id="queryType" name="queryType" required>
-                        <option value="">--Por favor seleccione--</option>
-                        <option value="general">Pregunta general</option>
-                        <option value="recipe">Sugerencia de receta de café</option>
-                        <option value="seeds">Consulta sobre semillas de café</option>
-                    </select>
-                    <br>
-                </div>
+                <label for="name">Nombre:</label><br>
+                <input class="full-ancho renglon" type="text" id="name" name="name" placeholder="Nombre Apellido" required>
+                <br>
+                <label for="email">Correo electrónico:</label><br>
+                <input class="full-ancho renglon" type="email" id="email" name="email" placeholder="ejemplo@email.com" required>
+                <br>
+                  
+                <label for="tipoConsulta">Tipo de consulta:</label><br>
+                <select class="full-ancho renglon" id="tipoConsulta" name="tipoConsulta" required>
+                    <option value="">--Por favor seleccione--</option>
+                    <option value="general">Pregunta general</option>
+                    <option value="receta">Sugerencia de receta de café</option>
+                    <option value="semillas">Consulta sobre semillas de café</option>
+                </select>
+                <br>
 
-                <div class="asunto">
-                    <label for="subject">Asunto:</label><br>
-                    <input type="text" id="subject" name="Asunto" placeholder="Asunto" required><br>
-                </div>
-                <div class="mensaje">
-                    <label for="message">Mensaje:</label><br>
-                    <textarea id="message" name="message" placeholder="mensaje" rows="7" required></textarea><br>
-                </div>
+                <label for="subject">Asunto:</label><br>
+                <input class="full-ancho renglon" type="text" id="subject" name="Asunto" placeholder="Asunto" required>
+                <br>
 
-                <div class="newsletter">
-                    <input type="checkbox" id="newsletter" name="newsletter">
-                    <label for="newsletter">¿Desea recibir nuestro boletín informativo?</label><br>
-                </div>
-                
-                <div class="botones">
-                    <ul class="buttons">
-                        <li><input type="submit" class="special" value="Enviar" /></li>
-                    </ul>
-                </div>  
-            </form>
-        </div>
+                <label for="message">Mensaje:</label><br>
+                <textarea class="full-ancho borde-full" id="message" name="message" rows="7" placeholder="mensaje" required></textarea>
+                <br>
+
+
+                <input type="checkbox" id="newsletter" name="newsletter">
+                <label for="newsletter">¿Desea recibir nuestro boletín informativo?</label>
+                <br>
+                    
+                <input class="full-ancho borde-full" type="submit" class="special" value="Enviar"/>
+                </form>
+            </div>
+        </section>    
     </main>
 
          
