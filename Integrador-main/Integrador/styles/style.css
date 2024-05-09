@@ -327,6 +327,7 @@ p {
     font-size: 3.5rem;
     text-align: center;
     font-family: "Indie Flower", cursive;
+    
 }
 
 .historia-contenido p{
@@ -334,12 +335,14 @@ p {
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+  margin-bottom: 8rem;
 }
 
 .border{
     border: solid 2px rgb(216, 109, 189);
     width: 20rem;
     margin: 0 auto;
+    margin-bottom: 3rem;
 }
 
 .historia-intro{
@@ -437,6 +440,16 @@ li{
     width: auto;
     height: 300px; /* Establece la altura deseada */
     object-fit: cover;
+}
+
+.cierre{
+    text-align: center;
+    font-family: "Indie Flower", cursive;
+    margin-bottom: 5rem;   
+}
+
+.cierre-final{
+    font-size: 40px;
 }
 
 /* //FOOTER */
