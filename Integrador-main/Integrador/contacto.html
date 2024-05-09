@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="styles/formulario.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link rel="shortcup icon" href="img/coffee-breaks.png">
+    <title>Contacto - MundoCafé</title>
+</head>
+
+<body>
+<header>
+    <div class="principal-nav">
+        <div class="logo">
+            <a href="index.html"><h1 class="titulo">Mundo<span class="negrita">Café</span> </h1></a>
+        </div>
+    <input type="checkbox" id="toggle">
+    <label for="toggle"><img class="menu" src="img/menu.svg" alt=""></label>
+
+        <nav class="navigation">
+            <ul>
+                <li> <a href="historia.html">Historia</a></li>
+                <li> <a href="receta.html">Recetas</a>
+                    <ul>
+                        <li> <a href="receta.html">Latte</a></li>
+                        <li> <a href="receta.html">Capuccino</a></li>
+                        <li> <a href="receta.html">Ice Coffee</a></li>
+                        <li> <a href="receta.html">Mas Recetas....</a></li>
+                    </ul>
+                </li>
+                <li> <a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<!--main-->   
+        
+    <main>
+        <section class="contacto fuente">
+            <div id="tituloFormulario">
+                <span class="icon solid fa-envelope">*ícono sobre*</span>
+                <!-- no se ve el ícono -->
+                <h2>Contactanos</h2>
+                <p>Somos expertos!!</p>
+            </div>
+            <form>
+                <label for="name">Nombre:</label><br>
+                <input class="full-ancho renglon" type="text" id="name" name="name" placeholder="Nombre Apellido" required>
+                <br>
+                <label for="email">Correo electrónico:</label><br>
+                <input class="full-ancho renglon" type="email" id="email" name="email" placeholder="ejemplo@email.com" required>
+                <br>
+                  
+                <label for="tipoConsulta">Tipo de consulta:</label><br>
+                <select class="full-ancho renglon" id="tipoConsulta" name="tipoConsulta" required>
+                    <option value=""> Seleccione una opción</option>
+                    <option value="general">Pregunta general</option>
+                    <option value="receta">Sugerencia de receta de café</option>
+                    <option value="semillas">Consulta sobre semillas de café</option>
+                </select>
+                <br>
+
+                <label for="subject">Asunto:</label><br>
+                <input class="full-ancho renglon" type="text" id="subject" name="Asunto" placeholder="Asunto" required>
+                <br>
+
+                <label for="message">Mensaje:</label><br>
+                <textarea class="full-ancho borde-full" id="message" name="message" rows="7" placeholder="mensaje" required></textarea>
+                <br>
+
+                
+                <input class="inline" type="checkbox" id="newsletter" name="newsletter">
+                <label for="newsletter">¿Desea recibir nuestro boletín informativo?</label>
+                
+                <br>
+                    
+                <input class="full-ancho borde-full boton" type="submit" class="special" value="Enviar"/>
+                </form>
+            </div>
+        </section>    
+    </main>
+
+         
+
+    
+    <footer class="footer">
+        <div class="contenedor">
+            <div class="barraNavegacion">
+                <a href="index.html">
+                    <h1 class="logo__nombre">Mundo Café</h1>
+                </a>
+	            <!--iconos redes sociales-->
+                <div class="icon">
+                    <ul class="icons">
+                        <span><a href="www.facebook.com" class="icon facebook-f" alt="icono facebook"><img class="icon" src="img/face.png" alt="facebook"></a></span>
+                        <span><a href="www.github.com" class="icongithub" alt="icono github"><img class="icon" src="img/github.png" alt="github"></a></span>
+                        <span><a href="www.google.com" class="icon google" alt="icono google"><img class="icon" src="img/google.png" alt="google"></a></span>
+                        <span><a href="www.gmail.com" class="icon email" alt="icono email"><img class="icon" src="img/email.png" alt="email"></a></span>
+                    </ul>
+                </div>
+
+                <div class="">
+                    <p class="footer-by">By Sol, Exe & Fer Group20</p>
+                </div>
+             </div>
+        </div>
+    </footer>
+</body>
+</html>

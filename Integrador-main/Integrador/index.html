@@ -11,20 +11,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
     <link rel="shortcup icon" href="img/coffee-breaks.png">
-    <title>InfoCoffe</title>
+    <title>MundoCafé</title>
 </head>
 
 <body class="bg">
 
-    <header class="header">
-
+    <header>
         <div class="principal-nav">
             <div class="logo">
-                <a href="/"><h1 class="titulo">Mundo<span class="negrita">Café</span> </h1></a>
+                <a href="index.html"><h1 class="titulo">Mundo<span class="negrita">Café</span> </h1></a>
             </div>
 
             <input type="checkbox" id="toggle">
-            <label for="toggle"><img class="menu" src="img/menu.svg" alt=""></label>
+            <label for="toggle"><img class="menu" src="img/menu.svg" alt="menu"></label>
 
             <!-- barra desplegable -->
             <nav class="navigation">
@@ -33,33 +32,37 @@
                     <li> <a href="receta.html">Recetas</a>
                         <ul>
                             <li> <a href="receta.html#latte">Latte</a></li>
-                            <li> <a href="receta.html">Capuccino</a></li>
-                            <li> <a href="receta.html">Ice Coffee</a></li>
-                            <li> <a href="receta.html">Mas Recetas....</a></li>
+                            <li> <a href="receta.html#capuccino">Capuccino</a></li>
+                            <li> <a href="receta.html#iceCofee">Ice Coffee</a></li>
+                            <li> <a href="receta.html#mas">Mas Recetas...</a></li>
                         </ul>
                     </li>
                     <li> <a href="contacto.html">Contacto</a></li>
                 </ul>
             </nav>
         </div>
-
-        <div class="subtitulo">
-            <div class="bajar">
-                <h2 class="no-margin">Aquí conoceras todo sobre el Café</h2>
-                <p class="no-margin">Con recetas deliciosas</p>
-            </div>
-
-        </div>
-
     </header>
 
-    <!-- <div class="contenedor contenido-principal">
+     <div class="subtitulo">
+        <!-- efecto fondo esmerilado-->
+        <div class="presentacion">
+            <div class="efectoglass">
+	            <div class="bajar">
+                    <h2>Aquí conoceras todo sobre el Café</h2>
+               	    <p>Con recetas deliciosas</p>
+                </div>
+		    </div>
+       	</div>
+	 </div>
+		
+    <!--main
+    <div class="contenedor contenido-principal">
         <main class="blog">
             <h3>Que café podemos preparar?</h3>
 
             <article class="entrada">
                 <div class="entrada-imagen">
-                    <img src="img/formas-cafe/Blank 4 Grids Collage.png" alt="">
+                    <img src="img/57_cafe.jpg" alt="">
                 </div>
 
                 <div class="entrada-contenido">
@@ -75,7 +78,7 @@
                     </p>
                 </div>
 
-            </article>
+            </article> 
         </main>
 
         <aside class="sidebar">
@@ -92,16 +95,22 @@
                 <a href="index.html">
                     <h1 class="logo__nombre">Mundo Café</h1>
                 </a>
+<!--iconos redes sociales-->
+                <div class="icon">
+                    <ul class="icons">
+			<span><a href="www.facebook.com" class="icon facebook-f" alt="icono facebook"><img class="icon" src="img/face.png" alt="facebook"></a></span>
+			<span><a href="www.github.com" class="icongithub" alt="icono github"><img class="icon" src="img/github.png" alt="github"></a></span>
+			<span><a href="www.google.com" class="icon google" alt="icono google"><img class="icon" src="img/google.png" alt="google"></a></span>
+                        <span><a href="www.gmail.com" class="icon email" alt="icono email"><img class="icon" src="img/email.png" alt="email"></a></span>
+                    </ul>
+                </div>
 
                 <div class="">
-                    <p class="footer-by">By Sol & Exe Group20</p>
+                    <p class="footer-by">By Sol, Exe & Fer Group20</p>
                 </div>
-            </div>
+             </div>
         </div>
     </footer>
-
-
-
 </body>
 
 </html>
