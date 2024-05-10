@@ -13,12 +13,10 @@ nextBtn.onclick = function() {
     moveSlider('next')
 }
 
-
 // Function para la imagen anterior 
 prevBtn.onclick = function() {
     moveSlider('prev')
 }
-
 
 function moveSlider(direction) {
     let sliderItems = sliderList.querySelectorAll('.item')
