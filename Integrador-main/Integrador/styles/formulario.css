@@ -1,13 +1,18 @@
 main{
-  background-image: url('../img/contacto-fondo.jpg');
+  background-image: url('../img/granos-home-2000.jpg');
   background-repeat: no-repeat;
   background-position:  center;
   background-attachment: relative;
   background-size: cover;
-
-  padding-top: 110px;
-  /* esto debería tener un media query xq el menú cambia de grosor */
+  padding-top: 80px;
 }
+
+@media screen and (max-width:950px) {
+ main{
+  padding-top: 100px;
+ }
+}
+
 
 /* es un quilombo de containers, los bordes son solo auxiliares después los saco*/
 
