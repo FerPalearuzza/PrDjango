@@ -51,7 +51,7 @@
                 <h2>Contactanos</h2>
                 <p>Somos expertos!!</p>
             </div>
-            <form>
+            <form id="formularioContacto" method="post" autocomplete="on" onsubmit="rtaRegistrada()" target="_self">
                 <label for="name">Nombre:</label><br>
                 <input class="full-ancho renglon" type="text" id="name" name="name" placeholder="Nombre Apellido" required>
                 <br>
@@ -82,14 +82,20 @@
                 
                 <br>
                     
-                <input class="full-ancho borde-full boton" type="submit" class="special" value="Enviar"/>
-                </form>
+                <input id="botonenviar" class="full-ancho borde-full boton" type="submit" value="Enviar"/>
+
+                <div id="rta">
+                <p>Se ha registrado su respuesta.</p>
+                </div>
+                
+            </form>
             </div>
         </section>    
     </main>
 
-         
-
+    <script>
+       
+    </script>
     
     <footer class="footer">
         <div class="contenedor">
@@ -113,5 +119,7 @@
              </div>
         </div>
     </footer>
+
+<script src="js/formulario.js"></script>
 </body>
 </html>
