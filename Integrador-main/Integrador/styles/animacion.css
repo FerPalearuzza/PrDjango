@@ -1,0 +1,22 @@
+/*transiciones y animaciones7*/
+/* index*/
+.contenido-video p:hover{
+    width: 15em;
+    text-align: center;
+    transition: background_color brown 3s, width 2s;
+}
+
+/*footer icons*/
+.icon:hover{
+    transform: scale(1.2);
+    transition: transform 0.3s;
+    
+}
+.footer .logo__nombre:hover{
+    transform: scale(1.4);
+    transition: transform 0.3s; 
+}
+.logo .titulo:hover{
+    transform: scale(1.4);
+    transition: transform 0.3s; 
+}
