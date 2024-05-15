@@ -101,6 +101,7 @@ select:focus{
 .boton{
   margin: 1em 0em;
   padding: 0.5em 0em;
+  color: rgb(0, 0, 0);
 }
 
 .boton:hover{
