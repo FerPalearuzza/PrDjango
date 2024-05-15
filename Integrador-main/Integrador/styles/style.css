@@ -558,12 +558,13 @@ video {
 .boton{
     background-color: rgb(255, 187, 0);
     padding: 1rem;
-    width: auto;
+    width: 20rem;
     display: flex;
     justify-content: center;
     border-radius: 10px;
     margin-bottom: 3rem;
     margin-top: 3rem;
+    text-align: center;
 }
 
 .boton:hover{
