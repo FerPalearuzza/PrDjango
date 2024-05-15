@@ -13,9 +13,4 @@ function initMap() {
         position: ubicacion,
         map: mapa,
     });
-<<<<<<< HEAD
-}
-*/
-=======
 } */
->>>>>>> sol
