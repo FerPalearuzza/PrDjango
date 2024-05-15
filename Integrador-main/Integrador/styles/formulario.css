@@ -120,6 +120,15 @@ select:focus{
   font-size: 1.8rem;
 }
 
+/* campos obligaotrios */
+#formularioContacto p, .oblig{
+  font-size: inherit;
+  color: rgb(255, 187, 0);
+}                
+                
+
+
+
 /* ------MAPA------- */
 
 .map-responsive{
