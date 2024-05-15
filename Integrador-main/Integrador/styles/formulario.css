@@ -18,7 +18,7 @@ main{
 
 /* contiene el blur y toda la "columna de formulario" con un tamaño máximo = breakpoint mas chico y se queda ahí estancado. y el centrado con margin auto y sus hijos con stretcch*/
 .contacto{
-  color: wheat;
+  color: bisque;
   backdrop-filter: blur(20px);
 
   display: flex;
@@ -85,7 +85,7 @@ input, textarea, select{
 }
 
 input::placeholder,textarea::placeholder{
-  color: #c2b4a0; 
+  color: #cac1b4; 
   ;
 }
 
