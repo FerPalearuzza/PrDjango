@@ -1,9 +1,9 @@
 /*transiciones y animaciones7*/
 /* index*/
 .contenido-video p:hover{
-    width: 15em;
     text-align: center;
-    transition: background_color brown 3s, width 2s;
+    background-color: rgb(74, 46, 1);
+    transition: background-color 2s;
 }
 
 /*footer icons*/
