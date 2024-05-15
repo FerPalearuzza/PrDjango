@@ -145,3 +145,33 @@ select:focus{
   width:100%;
   position:absolute;
 }
+
+/* ---- cosito de politias de privacidad ----- */
+
+
+#linkpoliticas{
+  font-family: inherit;
+  font-size: inherit;
+  color:#ff994f;
+}
+
+#linkpoliticas:link{
+  color:#ff994f;
+}
+
+#linkpoliticas:hover{
+  text-decoration: underline;
+}
+#linkpoliticas:active{
+  color:white;  
+}
+
+/* inisiste en dejarmelo en visited*/
+#linkpoliticas:visited{
+  color:#9c9286;
+}
+
+/* boton añadir archivo, no sé como sobreeescribir los estilos del botón aaaaaaa!*/
+input[type="file"]{
+  width: 100%;
+}
