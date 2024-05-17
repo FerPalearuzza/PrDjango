@@ -5,6 +5,15 @@
 });
 
 function rtaRegistrada(){
+  /*resetea los campos a cero"*/
+  document.getElementById('name').value= '';
+  document.getElementById('email').value= '';
+  document.getElementById('tipoConsulta').value= '';
+  document.getElementById('subject').value= '';
+  document.getElementById('message').value= '';
+  document.getElementById('newsletter').value= '';
+  document.getElementById('privacidad').value= '';
+
   document.getElementById('rta').style.display= 'block';
   console.log('Se envió una respuesta por el formulario.');
   // Oculta el botón de enviar
