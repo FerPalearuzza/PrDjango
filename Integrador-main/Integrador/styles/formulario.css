@@ -1,5 +1,5 @@
 main{
-  background-image: url('../img/granos-home-2000.jpg');
+  background-image: url('../img/cafe11.webp');
   background-repeat: no-repeat;
   background-position:  center;
   background-attachment: relative;
@@ -18,7 +18,7 @@ main{
 
 /* contiene el blur y toda la "columna de formulario" con un tamaño máximo = breakpoint mas chico y se queda ahí estancado. y el centrado con margin auto y sus hijos con stretcch*/
 .contacto{
-  color: wheat;
+  color: bisque;
   backdrop-filter: blur(20px);
 
   display: flex;
@@ -85,7 +85,7 @@ input, textarea, select{
 }
 
 input::placeholder,textarea::placeholder{
-  color: #c2b4a0; 
+  color: #cac1b4; 
   ;
 }
 
@@ -101,6 +101,7 @@ select:focus{
 .boton{
   margin: 1em 0em;
   padding: 0.5em 0em;
+  color: rgb(0, 0, 0);
 }
 
 .boton:hover{
@@ -117,4 +118,60 @@ select:focus{
 }
 #rta p{
   font-size: 1.8rem;
+}
+
+/* campos obligaotrios */
+#formularioContacto p, .oblig{
+  font-size: inherit;
+  color: rgb(255, 187, 0);
+}                
+                
+
+
+
+/* ------MAPA------- */
+
+.map-responsive{
+  overflow:hidden;
+  padding-bottom:56.25%;
+  position:relative;
+  height:0;
+}
+
+.map-responsive iframe{
+  left:0;
+  top:0;
+  height:100%;
+  width:100%;
+  position:absolute;
+}
+
+/* ---- cosito de politias de privacidad ----- */
+
+
+#linkpoliticas{
+  font-family: inherit;
+  font-size: inherit;
+  color:#ff994f;
+}
+
+#linkpoliticas:link{
+  color:#ff994f;
+}
+
+#linkpoliticas:hover{
+  text-decoration: underline;
+}
+#linkpoliticas:active{
+  color:white;  
+}
+
+/* inisiste en dejarmelo en visited*/
+#linkpoliticas:visited{
+  color:#9c9286;
+}
+
+/* boton añadir archivo, no sé como sobreeescribir los estilos del botón aaaaaaa!*/
+input[type="file"]{
+  width: 100%;
 }
