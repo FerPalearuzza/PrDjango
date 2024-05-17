@@ -115,13 +115,10 @@ select:focus{
 
 #rta{
  background-color: rgb(86, 64, 4, .5);
- margin: 1em 0em;
- padding: 0.5em 0em;
+ margin: 1em 0.5em;
+ padding: 0.5em 0.2em;
  border-radius: 1em;
- borde
- border-color: bisque rgb(0, 0, 0);
- /*display: none;*/
-}
+ }
 #rta p{
   text-align: center; 
   font-weight: 1px; 
