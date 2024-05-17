@@ -114,9 +114,17 @@ select:focus{
 }
 
 #rta{
- display: none;
+ background-color: rgb(86, 64, 4, .5);
+ margin: 1em 0em;
+ padding: 0.5em 0em;
+ border-radius: 1em;
+ borde
+ border-color: bisque rgb(0, 0, 0);
+ /*display: none;*/
 }
 #rta p{
+  text-align: center; 
+  font-weight: 1px; 
   font-size: 1.8rem;
 }
 
@@ -146,7 +154,7 @@ select:focus{
   position:absolute;
 }
 
-/* ---- cosito de politias de privacidad ----- */
+/* ---- cosito de politicas de privacidad ----- */
 
 
 #linkpoliticas{
