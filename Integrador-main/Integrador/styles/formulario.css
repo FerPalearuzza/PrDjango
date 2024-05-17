@@ -118,6 +118,7 @@ select:focus{
  margin: 1em 0.5em;
  padding: 0.5em 0.2em;
  border-radius: 1em;
+ display: none;
  }
 #rta p{
   text-align: center; 
@@ -125,7 +126,7 @@ select:focus{
   font-size: 1.8rem;
 }
 
-/* campos obligaotrios */
+/* campos obligatrios */
 #formularioContacto p, .oblig{
   font-size: inherit;
   color: rgb(255, 187, 0);
@@ -151,8 +152,18 @@ select:focus{
   position:absolute;
 }
 
+/*boton enviar*/
+.full-ancho {
+  color: bisque;
+  font-weight: bold;
+}
+.full-ancho:hover {
+  color:bisque;
+  background-color: rgb(58, 33, 1);
+  transition: color 1s, background-color 1s;
+}
+ 
 /* ---- cosito de politicas de privacidad ----- */
-
 
 #linkpoliticas{
   font-family: inherit;
