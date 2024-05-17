@@ -114,7 +114,7 @@ select:focus{
 }
 
 #rta{
- background-color: rgb(86, 64, 4, .5);
+ background-color: rgba(9, 8, 6, 0.5);
  margin: 1em 0.5em;
  padding: 0.5em 0.2em;
  border-radius: 1em;
@@ -132,9 +132,6 @@ select:focus{
   color: rgb(255, 187, 0);
 }                
                 
-
-
-
 /* ------MAPA------- */
 
 .map-responsive{
@@ -159,9 +156,14 @@ select:focus{
 }
 .full-ancho:hover {
   color:bisque;
-  background-color: rgb(58, 33, 1);
+  background-color: rgb(40, 23, 0, 0.5);
   transition: color 1s, background-color 1s;
 }
+
+/*fijarse de poder poner el logo y un  gracias cuando se envia el formulario
+.logo1 {
+  display:none;
+}*/
  
 /* ---- cosito de politicas de privacidad ----- */
 
