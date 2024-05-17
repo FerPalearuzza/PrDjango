@@ -1,0 +1,120 @@
+main{
+  background-image: url('../img/granos-home-2000.jpg');
+  background-repeat: no-repeat;
+  background-position:  center;
+  background-attachment: relative;
+  background-size: cover;
+  padding-top: 80px;
+}
+
+@media screen and (max-width:950px) {
+ main{
+  padding-top: 100px;
+ }
+}
+
+
+/* es un quilombo de containers, los bordes son solo auxiliares después los saco*/
+
+/* contiene el blur y toda la "columna de formulario" con un tamaño máximo = breakpoint mas chico y se queda ahí estancado. y el centrado con margin auto y sus hijos con stretcch*/
+.contacto{
+  color: wheat;
+  backdrop-filter: blur(20px);
+
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: stretch;
+
+  padding: 2.5rem;
+  margin: auto;
+}
+@media screen and (max-width:480px){
+  .contacto{
+    max-width: 100%;
+  }
+}
+@media screen and (min-width:480px){
+  .contacto{
+    max-width: 480px;
+  }
+}
+
+#tituloFormulario{
+  /* border: 2px solid white; */
+  padding: 1em;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  max-width: 100%;
+}
+
+/* elementos del formulario */
+.full-ancho{
+  width: 100%;
+  background-color: transparent;
+  border:none;
+}
+
+.renglon{
+  border-bottom: 1px solid bisque;
+}
+
+.borde-full{
+  border: 1px solid bisque;
+  border-radius: 0.2em;  
+}
+
+
+/* es igual a la config de .historia-contenido p{} salvo el color*/
+.fuente{
+  color: wheat; 
+  font-family: "Roboto Condensed", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+textarea{
+  resize: none;
+}
+
+input, textarea, select{ 
+  color: #c2b4a0; 
+  display: block;
+  padding: 0.3em 0px;
+}
+
+input::placeholder,textarea::placeholder{
+  color: #c2b4a0; 
+  ;
+}
+
+select:focus{
+  background-color: rgb(47, 31, 13);
+  /*   */
+}
+
+.inline{
+  display: inline;
+}
+
+.boton{
+  margin: 1em 0em;
+  padding: 0.5em 0em;
+}
+
+.boton:hover{
+  background-color: rgb(0,0,0,0.2);
+}
+
+.boton:active{
+  background-color: rgb(25,12,2,1);
+
+}
+
+#rta{
+ display: none;
+}
+#rta p{
+  font-size: 1.8rem;
+}
