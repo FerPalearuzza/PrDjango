@@ -167,7 +167,6 @@ header a:hover{
     z-index: 1;
 }
 
-
 /* Animacion al texto */
 .slider .list .item:nth-child(1) .content .title,
 .slider .list .item:nth-child(1) .content .type,
@@ -247,8 +246,6 @@ header a:hover{
         transform: translateX(150px);
     }
 }
-
-
 
 /* Animación para el anterior clic en el botón. */
 .slider.prev .list .item:nth-child(2){
