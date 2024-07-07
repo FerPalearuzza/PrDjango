@@ -14,18 +14,18 @@
         {% comment %} {{rexeta}}     {% endcomment %}
 
          <div class="receta-cafe">
-            {% for receta in rexeta %}
+            {% comment %} {% for receta in rexeta %} {% endcomment %}
             <div>
-                {% comment %} <img class="receta-img" src="{{rexeta.image}}" alt="cafe-latte"> {% endcomment %}
-                <img class="receta-img" src="{{receta.image}}" alt="cafe-latte">
+             <img class="receta-img" src="{{rexeta.image}}" alt="cafe-latte">
+                {% comment %} <img class="receta-img" src="{{receta.image}}" alt="cafe-latte"> {% endcomment %}
             </div>
 
             <div class="titulo-ingrediente">
                 <h3>Ingredientes</h3>
 
                 <ul class="ingredientes">
-                    {% comment %} <li>"{{rexeta.ingredient}}"</li> {% endcomment %}
-                    <li>"{{receta.ingredient}}"</li>
+                    <li>"{{rexeta.ingredient}}"</li>
+                    {% comment %} <li>"{{receta.ingredient}}"</li> {% endcomment %}
                     <!--<li>Lorem ipsum</li>--> 
                     <!--<li>Lorem ipsum</li>-->
                     <!--<li>Lorem ipsum</li>-->
@@ -39,10 +39,10 @@
             <div class="border"></div>
 
             <div class="preparacion-receta">
-                {% comment %} <p>"{{rexeta.description}}</p> {% endcomment %}
-                <p>"{{receta.description}}</p>
+                <p>"{{rexeta.description}}</p> 
+                {% comment %} <p>"{{receta.description}}</p> {% endcomment %}
             </div>
-            {% endfor%}
+            {% comment %} {% endfor%} {% endcomment %}
         </div> 
     </section>    
 </main>

@@ -29,8 +29,8 @@ urlpatterns = [
     path('capuccino/', core_views.capuccino, name="capuccino"),
     path('iceCoffe/', core_views.iceCoffe, name="iceCoffe"),
     path('contacto/', core_views.contacto, name="contacto"),
-    # path('BDrecetas/<int:entidad_id>/', recipe_views.bdrecetas, name="BDrecetas")
-    path('BDrecetas/', recipe_views.bdrecetas, name="BDrecetas")
+    path('BDrecetas/<int:entidad_id>/', recipe_views.bdrecetas, name="BDrecetas")
+    # path('BDrecetas/', recipe_views.bdrecetas, name="BDrecetas")
 ]
 
 # validamos DEBUG

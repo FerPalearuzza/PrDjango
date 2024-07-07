@@ -41,11 +41,17 @@
                     <li> <a href="{% url 'historia' %}">Historia</a></li>
                     <li> <a href="{% url 'receta' %}">Recetas</a>
                         <ul>
-                            <li> <a href="{% url 'latte' %}">Latte</a></li>
-                            <li> <a href="{% url 'capuccino' %}">Capuccino</a></li>
+                            {% comment %} <li> <a href="{% url 'latte' %}">Latte</a></li>
                             <li> <a href="{% url 'iceCoffe' %}">Ice Coffee</a></li>
+                            <li> <a href="{% url 'receta' %}">Mas Recetas...</a></li> {% endcomment %}
+
+                            {% comment %} <li> <a href="{% url 'capuccino' %}">Capuccino</a></li> {% endcomment %}
+                            <li> <a href="{% url 'BDrecetas' entidad_id=1 %}">Capuccino</a></li>
+                            <li> <a href="{% url 'BDrecetas' entidad_id=2 %}">Ice Coffee</a></li>
+                            <li> <a href="{% url 'BDrecetas' entidad_id=3 %}">Latte</a></li>
                             <li> <a href="{% url 'receta' %}">Mas Recetas...</a></li>
-                            <li> <a href="{% url 'BDrecetas' %}">BD Recetas</a></li>
+                            {% comment %} <li> <a href="{% url 'BDrecetas' %}">BD Recetas</a></li> {% endcomment %}
+                            {% comment %} <li> <a href="{% url 'BDrecetas' %}">BD Recetas</a></li> {% endcomment %}
                         </ul>
                     </li>
                     <li> <a href="{% url 'contacto' %}">Contacto</a></li>
