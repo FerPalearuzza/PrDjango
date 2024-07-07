@@ -8,9 +8,6 @@ def index(request):
 def historia(request):
     return render(request, "core/historia.html")
 
-def receta(request):
-    return render(request, "core/receta.html")
-
 def latte(request):
     return render(request, "core/latte.html")
 

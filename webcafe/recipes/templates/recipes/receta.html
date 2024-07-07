@@ -1,0 +1,45 @@
+{% extends "core/base.html" %}
+
+{% block title %}
+    Receta-MundoCafé
+{% endblock %}
+
+{% block content%}
+{% load static %}
+<main>
+    <div class="body">
+        <div class="slider">
+
+            <div class="list">
+                {% for receta in rexetas %}
+                <div class="item">
+                    <img src="{{receta.image.url}}" alt="cafe {{receta.name}}">
+                    <div class="content">
+                        <div class="title">Coffee</div>
+                        <div class="type">{{receta.title}}</div>
+                        <div class="description">{{receta.description}}</div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+
+            <div class="thumbnail">
+                {% for receta in rexetas %}
+                <div class="item">
+                    <img loading="lazy" src="{{receta.image.url}}" alt="cafe olla">
+                </div>
+                {% endfor %} 
+            </div>
+
+            <!-- button atras y adelante -->
+            <div class="nextPrevArrows">
+                <button class="prev">&lt;</button>
+                <button class="next">&gt;</button>
+            </div>
+            
+        </div>
+    </div>   
+</main>
+
+<script src="{% static 'core/js/app.js' %}"></script>
+{% endblock %}

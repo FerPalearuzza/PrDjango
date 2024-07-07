@@ -7,6 +7,9 @@ def bdrecetas(request, entidad_id):
     return render(request, "recipes/baserecipe.html",{'rexeta':rexeta})
 
 
+def receta(request):
+    rexetas = Receta.objects.all()
+    return render(request, "recipes/receta.html",{'rexetas':rexetas})
 
 # def bdrecetas(request):
 #    rexeta = Receta.objects.all()

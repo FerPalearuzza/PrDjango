@@ -24,7 +24,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', core_views.index, name="index"),
     path('historia/', core_views.historia, name="historia"),
-    path('receta/', core_views.receta, name="receta"),
+    path('receta/', recipe_views.receta, name="receta"),
     path('latte/', core_views.latte, name="latte"),
     path('capuccino/', core_views.capuccino, name="capuccino"),
     path('iceCoffe/', core_views.iceCoffe, name="iceCoffe"),
