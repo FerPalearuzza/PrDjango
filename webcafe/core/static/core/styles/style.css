@@ -1,0 +1,681 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+    padding: 0;
+}
+
+body {
+    font-size: 1.6rem;
+    line-height: 2;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+.bg {
+    background-image: url(../img/cafe16final.webp);
+    background-size: cover;
+}
+
+/*Globales*/
+.contenedor {
+    max-width: 120rem;
+    width: 90%;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.no-margin {
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+    
+}
+
+h1 {
+    margin: 0;
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 3.2rem;
+    line-height: 2.8rem;
+}
+
+a {
+    font-size: 2.4rem;
+    color: white;
+    font-family: "Indie Flower", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+@media (min-width:768px) {
+    .nav {
+        display: flex;
+        gap: 1rem;
+    }
+}
+
+.titulo {
+    border-radius: 15px;
+    text-align: center;
+    color: bisque;
+    font-weight: 400;
+}
+
+
+.subtitulo {
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+    font-family: "Caveat", cursive;
+    padding-top: 15rem;
+}
+
+.subtitulo p {
+    font-size: 3.9rem;
+}
+
+h2 {
+    font-size: 5rem;
+}
+
+.span {
+    font-weight: 400;
+    color: white;
+}
+
+p {
+    font-size: 2.4rem;
+}
+
+/* NAV desplegable */
+.principal-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0px;
+    background-color: rgba(1, 1, 1, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    z-index: 2;
+}
+
+.logo {
+    color: white;
+}
+
+.navigation {
+    ul {
+        list-style: none;
+    }
+}
+
+.principal-nav .navigation ul li {
+    float: left;
+    position: relative;
+
+}
+
+.principal-nav .navigation ul li a {
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+    display: block;
+    transition: all .2s ease;
+}
+
+.principal-nav .navigation ul li a:hover {
+    color: rgb(252, 138, 0);
+}
+
+.principal-nav .navigation ul li ul {
+    position: absolute;
+    right: 0;
+    width: 300px;
+    background-color: rgba(1, 1, 1, 0.7);
+    display: none;
+}
+
+.principal-nav .navigation ul li ul li a {
+    font-size: 19px;
+    text-transform: capitalize;
+}
+
+.principal-nav .navigation ul li ul li ul {
+    position: absolute;
+    top: 0;
+    right: 300px;
+}
+
+.principal-nav .navigation ul li ul li {
+    width: 100%;
+}
+
+.principal-nav .navigation ul li:hover>ul {
+    display: initial;
+
+}
+
+#toggle,
+.principal-nav label {
+    display: none;
+    cursor: pointer;
+}
+
+.menu {
+    width: 45px;
+    height: 35px;
+}
+
+@media (max-width:950px) {
+    .principal-nav label {
+        display: initial;
+    }
+
+    .principal-nav {
+        padding: 20px 10%;
+    }
+
+    .principal-nav .navigation {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: rgba(1, 1, 1, 0.7);
+        display: none;
+    }
+
+    .principal-nav .navigation ul li {
+        width: 100%;
+    }
+
+    .principal-nav .navigation ul li a {
+        padding: 8px 30px 8px 10%;
+    }
+
+    .principal-nav .navigation ul li ul {
+        position: relative;
+        width: 100%;
+        left: 0;
+    }
+
+    .principal-nav .navigation ul li ul li {
+        background-color: rgba(1, 1, 1, 0.7);
+
+    }
+
+    .principal-nav .navigation ul li ul li ul {
+        position: relative;
+        width: 100%;
+        left: 0;
+
+    }
+
+    #toggle:checked~.navigation {
+        display: block;
+    }
+}
+/* FIN menu desplegable */
+
+/* MAIN */
+@media (min-width:768px) {
+    .contenido-principal {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 5rem;
+    }
+}
+
+.negrita {
+    font-weight: 700;
+}
+
+@media (min-width:480px) {
+    .entrada-imagen {
+
+        width: 350px;
+        height: 350px;
+    }
+}
+
+.entrada-contenido {
+    text-align: left;
+}
+
+.entrada {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.blog h3 {
+    text-align: center;
+}
+
+/* HISTORIA */
+.historia-titulo {
+    margin-top: 6rem;
+    font-size: 3.5rem;
+    text-align: center;
+    font-family: "Indie Flower", cursive;
+
+}
+
+.historia-contenido p {
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 8rem;
+}
+
+.border {
+    border: solid 2px rgb(216, 109, 189);
+    width: 20rem;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+}
+
+.historia-intro {
+    margin-top: 8rem;
+}
+
+@media (max-width:468px) {
+    .historia-intro {
+
+        max-width: auto;
+        max-height: 150px;
+    }
+}
+
+.elaboracion {
+    display: flex;
+    justify-content: center;
+}
+
+
+.historia-cultura {
+    text-align: center;
+    font-size: 3.5rem;
+    text-align: center;
+    font-family: "Indie Flower", cursive;
+}
+
+
+/* Estilos para pantallas más pequeñas (menos de 768px) */
+@media (max-width: 767px) {
+    .cafe-europa {
+        display: grid;
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .foto1 {
+        grid-area: 1 / 1;
+    }
+
+    .nombre1 {
+        grid-area: 2 / 1;
+    }
+
+    .foto2,
+    .nombre2 {
+        grid-area: initial;
+    }
+}
+
+/* Estilos para pantallas más grandes (768px o más) */
+@media (min-width: 768px) {
+    .cafe-europa {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        text-align: center;
+        column-gap: 2rem;
+        grid-template-areas:
+            "imagen1 imagen2"
+            "nombre1 nombre2";
+    }
+}
+
+.cafe-europa img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cafe-europa p {
+    font-family: "Indie Flower", cursive;
+
+}
+
+.granos {
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+li {
+
+    font-size: 2rem;
+}
+
+.tipos-granos {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.tipos-granos img {
+    width: auto;
+    height: 300px;
+    object-fit: cover;
+}
+
+.cierre {
+    text-align: center;
+    font-family: "Indie Flower", cursive;
+    margin-bottom: 5rem;
+}
+
+.cierre-final {
+    font-size: 40px;
+}
+
+/* //FOOTER */
+.footer {
+    background-color: bisque;
+    padding: 0rem;
+    size: 1em;
+    margin: 0;
+    object-position: bottom bottom;
+}
+
+/*rden de iconos y cambio de color tipografia*/
+
+.footer-by {
+    color: rgb(87, 78, 67);
+    font-family: "Indie Flower", cursive;
+    margin: 0;
+    text-align: center;
+}
+
+
+.icon {
+    list-style: none;
+    list-style-type: none;
+    list-style-position: inline;
+    height: 30px;
+    text-align: center;
+    /*agregue estas lineas para animacion posterior*/
+    display: inline-block;
+    margin-right: 5px;
+    /* margin-block-end: 4%; esto desalineaba los iconos respecto a su contendor */
+}
+
+.logo__nombre {
+    color: rgb(131, 85, 29);
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .barraNavegacion {
+        min-height: 25rem;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+}
+
+@media (min-width:768px) {
+    .barraNavegacion {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0;
+        min-height: 10rem;
+
+    }
+}
+
+/* VIDEO */
+.video {
+    height: 75rem;
+    min-height: 50rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.video .overlay {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+
+}
+
+video {
+    display: block;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.contenido-video {
+    z-index: 1;
+}
+
+.contenido-video h2 {
+    color: bisque;
+    font-size: 5rem;
+    margin: 0;
+    font-family: "Indie Flower", cursive;
+}
+
+.contenido-video p {
+    color: white;
+    background-color: rgba(247, 152, 27, 0.479);
+    display: inline-block;
+    padding: 1rem 2rem;
+    font-size: 2.4rem;
+    font-weight: 700;
+    margin: 0;
+    border-radius: 10px;
+    font-family: "Indie Flower", cursive;
+}
+
+.intro-titulo{
+    text-align: center;
+    margin-top: 3rem;
+    font-family: "Indie Flower", cursive;
+}
+
+@media (min-width:768px) {
+    .contenido-intro{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 3rem;
+        margin-bottom: 4rem;
+         
+    } 
+}
+
+@media (max-width:468px) {
+    .contenido-intro{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.contenido-intro img {
+    width: 100%;
+    height: auto; 
+}
+
+
+.intro-tipos{
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.boton{
+    background-color: rgb(255, 187, 0);
+    padding: 1rem;
+    width: 20rem;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.boton:hover{
+    background-color: rgb(177, 130, 3);
+}
+
+.boton-enlace{
+    color: black;
+}
+
+@media (min-width:768px) {
+    .beneficios-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+}
+
+  .beneficios-texto {
+    padding: 20px; 
+    
+  }
+  
+  .beneficios-imagen img {
+    width: 100%;
+    height: 100%; 
+    object-fit: cover;
+  }
+
+ .beneficios{
+    margin-bottom: 2rem;
+    font-family: "Indie Flower", cursive;
+    text-align: center;
+ } 
+  
+ @media (max-width: 767px) {
+    .beneficios-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .texto_1 {
+        grid-area: 1 / 1;
+        
+    }
+
+    .foto_1 {
+        grid-area: 2 / 1;
+        
+    }
+
+    .texto_2 {
+        grid-area: 3 / 1;
+        /* El segundo texto debajo de la primera foto */
+    }
+
+    .foto_2 {
+        grid-area: 4 / 1;
+        /* La segunda foto debajo del segundo texto */
+    }
+}
+
+/* GALERIA */
+@media (max-width:767px) {
+    .galeria-grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .galeria-grid img {
+        object-fit: cover;
+    }
+}
+
+@media (min-width:768px) {
+    .galeria-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+
+    .galeria-grid img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+@media (min-width:990px) {
+    .galeria-grid{
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 2rem;
+    }
+
+    .galeria-grid img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.galeria-texto{
+    margin-top: 5rem;
+    text-align: center;
+    font-family: "Indie Flower", cursive;
+}
+
+.galeria-grid{
+    margin-bottom: 5rem;
+}
+
+.beneficios-texto{
+    background-color: rgb(241, 235, 227);
+}
+
+
+
+
+
+  

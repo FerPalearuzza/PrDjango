@@ -1,0 +1,159 @@
+{% extends "core/base.html" %}
+
+{% block title %}
+    Receta-MundoCafé
+{% endblock %}
+
+{% block content%}
+{% load static %}
+<main>
+    <div class="body">
+        <div class="slider">
+
+            <div class="list">
+
+                <div class="item">
+                    <img src="{% static 'core/img/recetas/cafe_lagrima.webp' %}" alt="cafe lagrima">
+                    <div class="content">
+                        <div class="title">Coffee</div>
+                        <div class="type">Lagrima</div>
+                        <div class="description">
+                            Es una forma de preparar café que consiste en una taza con un tercio de café y el restante leche.
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="item">
+                    <img loading="lazy" src="{% static 'core/img/recetas/americano.webp' %}" alt="cafe americano">
+
+                    <div class="content">
+                        <div class="title">Coffe</div>
+                        <div class="type">Americano</div>
+                        <div class="description">
+                            La receta del <strong>café americano</strong> tradicional se obtiene agregando agua caliente (90° aprox.) sobre un espresso servido en una taza mediana. 
+                        </div>                   
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img loading="lazy" src="{% static 'core/img/recetas/coffeViena.webp' %}" alt="cafe viena">
+
+                    <div class="content">
+                        <div class="title">Coffe</div>
+                        <div class="type">VienaCream</div>
+                        <div class="description">
+                            El <strong>café vienés</strong> es una variación deliciosa del más clásico espresso. En esta receta única, el café se combina con chocolate derretido y se cubre con un toque de crema batida.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img loading="lazy" src="{% static 'core/img/recetas/coffe_lattemachiato.webp' %}" alt="cafe machiato" id="latte">
+
+                    <div class="content">
+                        <div class="title">Coffe</div>
+                        <div class="type">Lattemachiato</div>
+                        <div class="description">
+                            <strong>Latte Macchiato</strong>, es una bebida compuesta por 2/3 partes de leche y 1/3 de café. 
+                        </div>                      
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img loading="lazy" src="{% static 'core/img/recetas/panacottta.webp' %}" alt="foto-panacota">
+
+                    <div class="content">
+                        <div class="title">Coffe</div>
+                        <div class="type">Panacotta</div>
+                        <div class="description">
+                            Es una receta italiana, que desborda de sabor. Ideal como acento final de una cena.
+                        </div>                     
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img loading="lazy" src="{% static 'core/img/recetas/coffee_ice.webp' %}" alt="foto cafe ice">
+
+                    <div class="content">
+                        <div class="title">Coffe</div>
+                        <div class="type">Ice</div>
+                        <div class="description">
+                            No dude en usar su café favorito, dado que casi todas las calidades sirven. El <strong> café helado</strong> sorprende y deslumbra a todas las edades.
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img loading="lazy" src="{% static 'core/img/recetas/frutilla.webp' %}" alt="foto cafe frutilla">
+
+                    <div class="content">
+                        <div class="title">Coffe</div>
+                        <div class="type">Frutilla</div>
+                        <div class="description">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti temporibus quis eum
+                            consequuntur voluptate quae doloribus distinctio.
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img loading="lazy" src="{% static 'core/img/recetas/cafeOlla.webp' %}" alt="foto cafe olla">
+
+                    <div class="content">
+                        <div class="title">Coffe</div>
+                        <div class="type">De Olla</div>
+                        <div class="description">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti temporibus quis eum
+                            consequuntur voluptate quae doloribus distinctio.
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="thumbnail">
+
+                <div class="item">
+                    <img loading="lazy" src="{% static 'core/img/recetas/cafeOlla.webp' %}" alt="cafe olla">
+                </div>
+                <div class="item">
+                    <img loading="lazy" src="{% static 'core/img/recetas/cafe_lagrima.webp' %}" alt="cafe lagrima">
+                </div>
+                <div class="item">
+                    <img loading="lazy" src="{% static 'core/img/recetas/americano.webp' %}" alt="cafe americano">
+                </div>
+                <div class="item">
+                    <img loading="lazy" src="{% static 'core/img/recetas/coffeViena.webp' %}" alt="cafe viena">
+                </div>
+
+                <div class="item">
+                    <img loading="lazy" src="{% static 'core/img/recetas/coffe_lattemachiato.webp' %}" alt="latte">
+                </div>
+
+                <div class="item">
+                    <img loading="lazy" src="{% static 'core/img/recetas/panacottta.webp' %}" alt="panacotta">
+                </div>
+
+                <div class="item">
+                    <img loading="lazy" src="{% static 'core/img/recetas/coffee_ice.webp' %}" alt="coffe ice">
+                </div>
+
+                <div class="item">
+                    <img loading="lazy" src="{% static 'core/img/recetas/frutilla.webp' %}" alt="cafe frutilla">
+                </div>
+
+            </div>
+
+            <!-- button atras y adelante -->
+            <div class="nextPrevArrows">
+                <button class="prev">&lt;</button>
+                <button class="next">&gt;</button>
+            </div>
+            
+        </div>
+</main>
+
+<script src="{% static 'core/js/app.js' %}"></script>
+{% endblock %}

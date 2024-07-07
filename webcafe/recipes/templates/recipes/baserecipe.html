@@ -1,0 +1,51 @@
+{% extends "core/base.html" %}
+
+{% block title %}
+    RECETAS BD
+{% endblock %}
+
+{% block content%}
+{% load static %}
+
+<!--main-->   
+    
+<main>
+    <section class="contenedor">
+        {% comment %} {{rexeta}}     {% endcomment %}
+
+         <div class="receta-cafe">
+            {% for receta in rexeta %}
+            <div>
+                {% comment %} <img class="receta-img" src="{{rexeta.image}}" alt="cafe-latte"> {% endcomment %}
+                <img class="receta-img" src="{{receta.image}}" alt="cafe-latte">
+            </div>
+
+            <div class="titulo-ingrediente">
+                <h3>Ingredientes</h3>
+
+                <ul class="ingredientes">
+                    {% comment %} <li>"{{rexeta.ingredient}}"</li> {% endcomment %}
+                    <li>"{{receta.ingredient}}"</li>
+                    <!--<li>Lorem ipsum</li>--> 
+                    <!--<li>Lorem ipsum</li>-->
+                    <!--<li>Lorem ipsum</li>-->
+                </ul>
+            </div>
+        </div>
+
+        <div>
+            <h3 class="preparacion">Preparacion</h3>
+
+            <div class="border"></div>
+
+            <div class="preparacion-receta">
+                {% comment %} <p>"{{rexeta.description}}</p> {% endcomment %}
+                <p>"{{receta.description}}</p>
+            </div>
+            {% endfor%}
+        </div> 
+    </section>    
+</main>
+
+
+{% endblock %}
