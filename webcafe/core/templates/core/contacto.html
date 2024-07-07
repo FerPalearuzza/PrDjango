@@ -1,12 +1,12 @@
 {% extends "core/base.html" %}
 
-{% block title %}
-    Contacto-MundoCafé
-{% endblock %}
+{% block title %}Contacto - MundoCafé{% endblock %}
+
+{% load static %}
+{%block contacto_css %}<link rel="stylesheet" href="{% static 'core/styles/formulario.css' %}">{%endblock%}
+<!--<link rel="stylesheet" href="{% static '../../static/core/styles/formulario.css' %}">-->
 
 {% block content%}
-{% load static %}
-<link rel="stylesheet" href="{% static 'core/styles/formulario.css' %}">
 
 <!--main-->
 
@@ -63,7 +63,7 @@
                 <p>Se ha registrado su respuesta.</p>
             </div>
             <div class="logo1">
-                <a href="index.html">
+                <a href="{% url 'index' %}">
                     <h2 class="titulo">Mundo<span class="negrita">Café</span> </h2>
                 </a>
             </div>
