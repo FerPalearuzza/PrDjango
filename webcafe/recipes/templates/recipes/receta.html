@@ -13,7 +13,7 @@
             <div class="list">
                 {% for receta in rexetas %}
                 <div class="item">
-                    <img src="{{receta.image.url}}" alt="cafe {{receta.name}}">
+                    <img src="{{receta.image.url}}" alt="cafe {{receta.title}}">
                     <div class="content">
                         <div class="title">Coffee</div>
                         <div class="type">{{receta.title}}</div>
@@ -27,7 +27,7 @@
             <div class="thumbnail">
                 {% for receta in rexetas %}
                 <div class="item">
-                    <img loading="lazy" src="{{receta.image.url}}" alt="cafe olla">
+                    <img loading="lazy" src="{{receta.image.url}}" alt="cafe {{receta.title}}">
                 </div>
                 {% endfor %} 
             </div>
