@@ -17,8 +17,8 @@
                     <div class="content">
                         <div class="title">Coffee</div>
                         <div class="type">{{receta.title}}</div>
+                        <div class="description">{{receta.slider_text}}</div>
                         <div class="description"><a href="{% url 'BDrecetas' receta.id %}">Conocé más</a></div>
-                        {% comment %} <div class="description">{{receta.description}}</div> {% endcomment %}
                     </div>
                 </div>
                 {% endfor %}

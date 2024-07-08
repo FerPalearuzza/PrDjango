@@ -9,7 +9,8 @@ class Receta(models.Model):
     image=models.ImageField(verbose_name= "Foto", upload_to="recipes")
     created=models.DateTimeField(auto_now_add=True, verbose_name= "Creado")
     updated=models.DateTimeField(auto_now=True, verbose_name= "Actualizado")
-
+    slider_text = models.TextField(null=True,blank=True,default="Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti temporibus quis eum")
+    
     def __str__(self):
         return self.title
     
