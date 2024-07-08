@@ -310,9 +310,9 @@ header a:hover{
     
 }
 
-.receta-cafe{
-    margin-top: 15rem;
-    
+.receta-titulo{
+    margin-top: 12rem;
+    margin-bottom: 3rem; 
 }
 
 /* internas */

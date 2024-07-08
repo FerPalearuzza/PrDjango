@@ -11,16 +11,18 @@
     
 <main>
     <section class="contenedor">
-        {% comment %} {{rexeta}}     {% endcomment %}
-
+        <div class="receta-titulo">
+            <h2 class="no-margin intro-titulo">{{rexeta.title}}</h2>
+        </div>
+        
          <div class="receta-cafe">
             {% comment %} {% for receta in rexeta %} {% endcomment %}
-            <div>
+            <div>        
              <img class="receta-img" src="{{rexeta.image.url}}" alt="cafe-latte">
-                {% comment %} <img class="receta-img" src="{{receta.image}}" alt="cafe-latte"> {% endcomment %}
             </div>
 
             <div class="titulo-ingrediente">
+                
                 <h3>Ingredientes</h3>
 
                 <ul class="ingredientes">
