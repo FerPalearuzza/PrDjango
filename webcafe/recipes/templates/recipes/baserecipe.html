@@ -26,7 +26,7 @@
                 <h3>Ingredientes</h3>
 
                 <ul class="ingredientes">
-                    <li>"{{rexeta.ingredient}}"</li>
+                    <li>{{rexeta.ingredient|linebreaksbr}}</li>
                     {% comment %} <li>"{{receta.ingredient}}"</li> {% endcomment %}
                     <!--<li>Lorem ipsum</li>--> 
                     <!--<li>Lorem ipsum</li>-->
@@ -41,7 +41,7 @@
             <div class="border"></div>
 
             <div class="preparacion-receta">
-                <p>"{{rexeta.description}}</p> 
+                <p>{{rexeta.description|linebreaksbr}}</p> 
                 {% comment %} <p>"{{receta.description}}</p> {% endcomment %}
             </div>
             {% comment %} {% endfor%} {% endcomment %}
