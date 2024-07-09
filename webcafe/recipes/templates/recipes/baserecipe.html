@@ -1,0 +1,53 @@
+{% extends "core/base.html" %}
+
+{% block title %}
+    {{rexeta.title}} - MundoCafé
+{% endblock %}
+
+{% block content%}
+{% load static %}
+
+<!--main-->   
+    
+<main>
+    <section class="contenedor">
+        <div class="receta-titulo">
+            <h2 class="no-margin intro-titulo">{{rexeta.title}}</h2>
+        </div>
+        
+         <div class="receta-cafe">
+            {% comment %} {% for receta in rexeta %} {% endcomment %}
+            <div>        
+             <img class="receta-img" src="{{rexeta.image.url}}" alt="cafe {{rexeta.title}}">
+            </div>
+
+            <div class="titulo-ingrediente">
+                
+                <h3>Ingredientes</h3>
+
+                <ul class="ingredientes">
+                    <li>{{rexeta.ingredient|linebreaksbr}}</li>
+                    {% comment %} <li>"{{receta.ingredient}}"</li> {% endcomment %}
+                    <!--<li>Lorem ipsum</li>--> 
+                    <!--<li>Lorem ipsum</li>-->
+                    <!--<li>Lorem ipsum</li>-->
+                </ul>
+            </div>
+        </div>
+
+        <div>
+            <h3 class="preparacion">Preparacion</h3>
+
+            <div class="border"></div>
+
+            <div class="preparacion-receta">
+                <p>{{rexeta.description|linebreaksbr}}</p> 
+                {% comment %} <p>"{{receta.description}}</p> {% endcomment %}
+            </div>
+            {% comment %} {% endfor%} {% endcomment %}
+        </div> 
+    </section>    
+</main>
+
+
+{% endblock %}

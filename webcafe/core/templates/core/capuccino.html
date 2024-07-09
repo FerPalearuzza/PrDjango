@@ -1,0 +1,49 @@
+{% extends "core/base.html" %}
+
+{% block title %}
+    Capuccino-MundoCafé
+{% endblock %}
+
+{% block content%}
+{% load static %}
+
+<!--main-->   
+        
+<main>
+    <section class="contenedor">
+        <div class="receta-cafe">
+            <div>
+                <img class="receta-img" src="{% static 'core/img/recetas/capuccino.webp' %}" alt="cafe-latte">
+            </div>
+
+            <div class="titulo-ingrediente">
+                <h3>Ingredientes</h3>
+
+                <ul class="ingredientes">
+                    <li>Lorem ipsum</li>
+                    <li>Lorem ipsum</li>
+                    <li>Lorem ipsum</li>
+                    <li>Lorem ipsum</li>
+                </ul>
+            </div>
+        </div>
+
+        <div>
+            <h3 class="preparacion">Preparacion</h3>
+
+            <div class="border"></div>
+
+            <div class="preparacion-receta">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus enim eaque doloremque quidem, sint molestiae voluptate animi maxime odio doloribus, 
+                itaque vel optio ipsum nesciunt nostrum sed illo, omnis repellendus.</p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus enim eaque doloremque quidem, sint molestiae voluptate animi maxime odio doloribus, 
+                itaque vel optio ipsum nesciunt nostrum sed illo, omnis repellendus.
+            </p>  
+            </div>
+
+        </div>
+    </section>    
+</main>
+
+{% endblock %}

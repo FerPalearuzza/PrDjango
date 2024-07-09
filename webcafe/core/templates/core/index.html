@@ -1,0 +1,103 @@
+{% extends "core/base.html" %}
+
+{% block content%}
+{% load static %}
+
+<!-- Video -->
+<div class="video">
+    <div class="overlay">
+        <div class="contenedor contenido-video">
+            <h2>Aquí conocerás sobre el Café</h2>
+            <p><a href="{% url 'receta' %}" target="_blank">Con recetas deliciosas</a></p>
+        </div>
+    </div>
+
+    <video autoplay muted loop>
+        <source src="{% static 'core/video/CoffeeBeanF.mp4' %}" type="video/mp4">
+    </video>
+</div>
+
+<main>
+
+    <section class="intro contenedor">
+
+        <h2 class="intro-titulo">Cual Tú Prefieres..?</h2>
+
+        <div class="contenido-intro">
+
+            <div>
+                <img src="{% static 'core/img/index/instantaneo.png' %}" alt="tipos-cafe">
+                <h3 class="intro-tipos">Instantáneo</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat obcaecati velit dolorem modi
+                    ipsam provident voluptatum? Sequi velit ut soluta ea architecto pariatur perspiciatis.
+                    Ab voluptate consequatur tempore rem sapiente.</p>
+            </div>
+
+            <div>
+                <img src="{% static 'core/img/index/950ab85d-d2c9-4ed1-8f82-9547190b3ca5.png' %}" alt="tipos-cafe">
+                <h3 class="intro-tipos">Capsulas</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat obcaecati velit dolorem modi
+                    ipsam provident voluptatum? Sequi velit ut soluta ea architecto pariatur perspiciatis.
+                    Ab voluptate consequatur tempore rem sapiente.</p>
+            </div>
+
+            <div>
+                <img src="{% static 'core/img/index/c3.png' %}" alt="tipos-cafe">
+                <h3 class="intro-tipos">Granos</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat obcaecati velit dolorem modi
+                    ipsam provident voluptatum? Sequi velit ut soluta ea architecto pariatur perspiciatis.
+                    Ab voluptate consequatur tempore rem sapiente.</p>
+            </div>
+        </div>
+
+    </section>
+
+    <div class="boton contenedor">
+        <a class="boton-enlace" href="historia.html">Aprende más...</a>
+    </div>
+    
+
+    <section class="contenedor">
+
+        <div class="beneficios-grid">
+
+            <div class="beneficios-texto texto_1">
+                <h3 class="beneficios">Beneficios</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae porro qui deserunt doloremque
+                    incidunt corrupti excepturi, maxime asperiores ad atque voluptates, earum, ducimus debitis nam?
+                    Natus odio tempore fugiat quasi!</p>
+            </div>
+            <div class="beneficios-imagen foto_1">
+                <img loading="lazy" src="{% static 'core/img/cafe6.webp' %}" alt="foto-cafe-beneficios">
+            </div>
+
+            <div class="beneficios-imagen foto_2">
+                <img loading="lazy" src="{% static 'core/img/cafe2.webp' %}" alt="foto-beneficios">
+            </div>
+            <div class="beneficios-texto texto_2">
+                <h3 class="beneficios">Cuantas tazas tomar por dia?</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae porro qui deserunt doloremque
+                    incidunt corrupti excepturi, maxime asperiores ad atque voluptates, earum, ducimus debitis nam?
+                    Natus odio tempore fugiat quasi!</p>
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+<!-- Galeria -->
+<section class="galeria contenedor">
+    <h2 class="galeria-texto">Mira estas esquisitas ideas para tu café</h2>
+
+    <div class="galeria-grid">
+        <img loading="lazy" src="{% static 'core/img/recetas/capuccino.webp' %}" alt="cafe-capuccino">
+        <img loading="lazy" src="{% static 'core/img/recetas/cafe_frappe.webp' %}" alt="cafe-frappe">
+        <img loading="lazy" src="{% static 'core/img/recetas/frutilla.webp' %}" alt="cafe-frutilla">
+        <img loading="lazy" src="{% static 'core/img/recetas/cafe_lagrima.webp' %}" alt="cafe-lagrima">
+        <img loading="lazy" src="{% static 'core/img/recetas/panacottta.webp' %}" alt="cafe-panacoota">         
+        <img loading="lazy" src="{% static 'core/img/recetas/coffe_lattemachiato.webp' %}" alt="cafe-latte">
+    </div>
+</section>
+{% endblock %}
