@@ -1,5 +1,3 @@
-{% extends "core/base.html" %}
-
 {% block title %}Contacto - MundoCafé{% endblock %}
 
 {% load static %}
@@ -16,7 +14,10 @@
             <h2>Contactanos</h2>
             <p>Somos expertos!!</p>
         </div>
-        <form id="formularioContacto" method="post" autocomplete="on" onsubmit="rtaRegistrada()" target="_self">
+        <form id="formularioContacto" method="post" autocomplete="on" target="_self" action="{% url 'tablacontacto' %}" onsubmit="rtaRegistrada()"> 
+            
+            {% csrf_token %}
+            
             <label for="name">Nombre <span class="oblig">*</span></label><br>
             <input class="full-ancho renglon" type="text" id="name" name="name" placeholder="Nombre Apellido"
                 required>
@@ -42,7 +43,7 @@
             <label for="message">Mensaje <span class="oblig">*</span></label><br>
             <textarea class="full-ancho borde-full" id="message" name="message" rows="7" placeholder="mensaje" required></textarea>
             <br>
-            <input class="arch" type="file" required>
+            <input class="arch" id="arch" type="file" required>
             
             <br>
             <input class="inline" type="checkbox" id="newsletter" name="newsletter">
@@ -55,7 +56,7 @@
 
             <br>
             <p>* Campos obligatorios.</p>
-
+            {% comment %} <button type="submit">Submit</button> {% endcomment %}
             <input class="full-ancho borde-full boton" type="submit" id="enviar" value="Enviar">
 
             <div id="rta">
@@ -74,11 +75,56 @@
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d201169.3703163874!2d-57.765343077742365!3d-38.01745163613915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9584d94d19d34209%3A0xdd9670804bfed126!2sMar%20del%20Plata%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1715732223595!5m2!1ses-419!2sar"
                 width="430" height="350" style="border: 5px solid #000;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
+            </iframe> 
         </div>
     </section>
 </main>
 
 <script src="{% static 'core/js/formulario.js' %}"></script>
+<script>
+  document.getElementById('formularioContacto').addEventListener('submit', function(event) {
+    event.preventDefault(); 
+    console.log("Se evitó la recarga de la página al apretar el botón enviar.");
+  
+  console.log(document.getElementById("name").value);
+  
+    const nombre = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const topic = document.getElementById("tipoConsulta").value;
+    const mensaje = document.getElementById("message").value;
+    const suscripto= document.getElementById("newsletter").checked;
+  
+      const formData = new FormData();
+        formData.append('name', nombre);
+        formData.append('email', email);
+        formData.append('tipoConsulta', topic);
+        formData.append('message', mensaje);
+        formData.append('newsletter', suscripto);
+        formData.append('csrfmiddlewaretoken', '{{ csrf_token }}');
+        console.log(formData);
+  
+        fetch("{% url 'tablacontacto'%}", {
+          method: 'POST',
+          body: formData
+        })
+        .then(response => response.json())
+        .then(data => {
+          console.log('Success:', data);
+        })
+        .catch(error => {
+          console.error('Error:', error);
+        });
+        /*resetea los campos a cero"*/
+        document.getElementById('name').value= '';
+        document.getElementById('email').value= '';
+        document.getElementById('tipoConsulta').value= '';
+        document.getElementById('subject').value= '';
+        document.getElementById('message').value= '';
+        document.getElementById('arch').value= '';
+        document.getElementById('newsletter').checked= false;
+        document.getElementById('privacidad').checked= false; 
+     });
+
+    </script>  
 
 {% endblock%}

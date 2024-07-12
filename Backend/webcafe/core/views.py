@@ -20,8 +20,8 @@ def iceCoffe(request):
 def masReceta(request):
     return render(request, "core/masReceta.html")
 
-def contacto(request):
-    return render(request, "core/contacto.html")
+# def contacto(request):
+#     return render(request, "core/contacto.html")
 
 
 

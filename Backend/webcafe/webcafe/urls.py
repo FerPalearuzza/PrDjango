@@ -19,6 +19,7 @@ from django.urls import path
 from django.conf import settings
 from core import views as core_views
 from recipes import views as recipe_views
+from contacts import views as contacts_views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -28,9 +29,9 @@ urlpatterns = [
     path('latte/', core_views.latte, name="latte"),
     path('capuccino/', core_views.capuccino, name="capuccino"),
     path('iceCoffe/', core_views.iceCoffe, name="iceCoffe"),
-    path('contacto/', core_views.contacto, name="contacto"),
-    path('BDrecetas/<int:entidad_id>/', recipe_views.bdrecetas, name="BDrecetas")
-    # path('BDrecetas/', recipe_views.bdrecetas, name="BDrecetas")
+    path('contacto/', contacts_views.contacto, name="contacto"),
+    path('BDrecetas/<int:entidad_id>/', recipe_views.bdrecetas, name="BDrecetas"),
+    path('tablecontactos/', contacts_views.tablecontactos, name="tablacontacto")
 ]
 
 # validamos DEBUG
